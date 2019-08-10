@@ -1,0 +1,22 @@
+version: '3'
+services:
+  ruby:
+    image: ruby:2.3.3
+    working_dir: /code
+    volumes:
+    - .:/code
+  node:
+    image: node:stretch-slim
+    working_dir: /code
+    volumes:
+    - .:/code
+  python:
+    image: python:latest
+    working_dir: /code
+    volumes:
+    - .:/code
+  go:
+    image: golang:alpine
+    working_dir: /code
+    volumes:
+    - .:/code
