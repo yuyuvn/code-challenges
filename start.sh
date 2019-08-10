@@ -41,10 +41,10 @@ if [ "$file" ]; then
   fi
 fi
 
-# Special process for each language
+# Special command for each language
 case $1 in
   ruby)
-    if [ -z "$command" ]; then
+    if [ -z "$file" ]; then
       command="irb"
     fi
     ;;
